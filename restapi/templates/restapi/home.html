@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Online-service for real estate valuation</title>
+	<link rel="stylesheet" href="{% static 'css/form.css' %}">
+</head>
+<body>
+	<header>
+		<h1>Online Service for real estate valuation</h1>
+		<nav>
+			<a href="http://localhost:8000/" class = "active">Home</a>
+			<a href="http://localhost:8000/form/">Search</a>
+			<a href="http://www.krisha.kz">Krisha.kz</a>
+		</nav>
+	</header>
+	<main>
+		<aside class = "left">
+			<img src="{% static 'images/amerikanskie-doma20.jpg' %}" alt="Creative Common Ultimate Photo" title="By Ed Yourdon [CC BY-SA 2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons"/>
+
+			<img alt="Ultimate Frisbee Colorado Cup 2005" src="{% static 'images/proekt-america-doma-dt0109bk-1.jpg' %}"/>
+
+
+			<img src="{% static 'images/xtula_1.jpg.pagespeed.ic.mqJj-QlS9k.jpg' %}"  alt="Ultimate Frisbee"/>
+		</aside>
+		<section class = "right">
+			<h2>The object of our project is to develop an online service for estimating the value of real estate. Supervised machine learning methods, including regression analysis, can help in solving this problem. Models based on it, based on the analysis of the parameters of apartments, will predict the most realistic price for real estate. Having identified the data necessary for the collection using Python code, information was gathered on the apartments of the city of Nur-Sultan from the website krisha.kz , a marketplace for buying, selling and renting real estate in Kazakhstan. Being one of the largest cities in Kazakhstan, Nur-Sultan ranks 2nd out of 17 in the price rating of cities, after Almaty and before Shymkent. Also, over the past three years, there has been an increase in the price of apartments per square meter. As a result of the diploma project, an ensemble of algorithms was built consisting of Random Forest, XGBoost, CatBoost models to obtain the best forecasting efficiency. The overall accuracy of the models was 80%. All of these models were connected via Django to the website.
+</h2>
+			<br></br>
+		</section>
+	</main>
+</body>
+</html>

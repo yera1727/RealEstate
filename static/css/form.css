@@ -1,0 +1,165 @@
+body {
+	background-image: url('Deep-Dark-Space-1920x1200.jpg');
+}
+header {
+	background-color: #fc3;
+	background-image: url('14big.jpg');
+	background-position: center;
+	background-size: 100%;
+	padding: 30px;
+}
+nav > a {
+	color: #d20000;
+	display: inline-block;
+	margin: 20px 145px;
+	border: solid;
+	background-color: #fc3;
+	border-radius: 8px;
+	padding: 20px 60px;
+	text-decoration: underline;
+}
+nav > a:hover{
+	background-color: #f3dea0;
+}
+.active:active,
+nav > a:active{
+	background-color: #a78521;
+}
+.active{
+	color: #d20000;
+	background: #f3dea0;
+	text-decoration: underline;
+}
+body{
+	padding: 10px;
+	margin: 15px;
+}
+h1{
+	background-color: brown;
+	text-align: center;
+	color: #FFFFFF;
+	margin-top: 0;
+	width: fit-content;
+}
+h2{
+	color: #d20000;
+	background-color: #f3dea0;
+}
+section{
+	display: inline-block;
+	background: #94fe34;
+}
+link{
+	background: #AF12BC;
+	color: #AAAAAA;
+}
+img {
+	display: block;
+	width: 200px;
+	border: solid #d20000;
+	margin: 20px auto;
+}
+.left{
+	background-color: #fc3;
+	display: grid;
+	width: 250px;
+	float: left;
+	margin-right: 10px;
+}
+.left> a:nth-child(3) {
+	height: 300px;
+}
+.right {
+	display: grid;
+	background: #FFFFFF;
+	margin-left: 20px;
+}
+.right > p {
+	text-align: left;
+}
+.right > h2 {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+/* Task 1 */
+section.right {
+	background-color: transparent;
+}
+p {
+	color: white;
+	margin: auto;
+	padding: 10px 10px;
+	background-color: black;
+}
+table {
+	width: 600px;
+	color: #fc3;
+	margin: auto;
+	border-spacing: 1px;
+}
+
+/* Task 2 & 3*/
+th {
+	text-align: center;
+	margin: auto;
+	color: #d20000;
+	border-bottom: 3px solid #ceb15c;
+	border-radius: 5px 5px 0 0;
+	background: linear-gradient(0deg, #f3dea0 /*80%*/, #ceb15c);
+	padding: 10px;
+
+}
+
+/* Task 3 */
+th:first-child{
+	text-align: center;
+}
+td:first-child{
+	text-align: left;
+}
+
+/* Task 4 */
+/*tr > td {
+	opacity: 0.8;
+}*/
+
+
+/* Task 5 */
+tr > td:hover {
+	opacity: 1;
+}
+tr > td.end1 {
+	border-radius: 0 0 0 5px;
+}
+tr > td.end2 {
+	border-radius: 0 0 5px 0;
+}
+
+/* Task 6 & 3  */
+td {
+	text-align: center;
+	background: linear-gradient(0deg, #d20000 80%, #ceb15c);
+	padding: 10px;
+	transition: 0.5s ease;
+}
+
+button {
+	width: fit-content;
+	margin: auto;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.finder {
+    position: absolute;
+    top: 25%;
+    z-index: 2;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+}

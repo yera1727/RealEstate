@@ -1,0 +1,132 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Online-service for real estate valuation</title>
+	<link rel="stylesheet" href="{% static 'css/form4.css' %}">
+</head>
+<body>
+	<header>
+		<h1>Online Service for real estate valuation</h1>
+		<nav>
+			<a href="http://localhost:8000/home/" class = "active">Home</a>
+			<a href="http://localhost:8000/form/">Search</a>
+			<a href="http://www.krisha.kz">Krisha.kz</a>
+		</nav>
+	</header>
+	<main>
+		<aside class = "left">
+			<img src="{% static 'images/amerikanskie-doma20.jpg' %}" alt="Creative Common Ultimate Photo" title="By Ed Yourdon [CC BY-SA 2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons"/>
+		
+			<img alt="Ultimate Frisbee Colorado Cup 2005" src="{% static 'images/proekt-america-doma-dt0109bk-1.jpg' %}"/>
+		
+		
+			<img src="{% static 'images/xtula_1.jpg.pagespeed.ic.mqJj-QlS9k.jpg' %}"  alt="Ultimate Frisbee"/>
+		</aside>
+<section class = "right">
+			<h2>The object of our project is to develop an online service for estimating the value of real estate. Supervised machine learning methods, including regression analysis, can help in solving this problem. Models based on it, based on the analysis of the parameters of apartments, will predict the most realistic price for real estate. Having identified the data necessary for the collection using Python code, information was gathered on the apartments of the city of Nur-Sultan from the website krisha.kz , a marketplace for buying, selling and renting real estate in Kazakhstan. Being one of the largest cities in Kazakhstan, Nur-Sultan ranks 2nd out of 17 in the price rating of cities, after Almaty and before Shymkent. Also, over the past three years, there has been an increase in the price of apartments per square meter. As a result of the diploma project, an ensemble of algorithms was built consisting of Random Forest, XGBoost, CatBoost models to obtain the best forecasting efficiency. The overall accuracy of the models was 80%. All of these models were connected via Django to the website.
+		</h2>
+			<br></br>
+		</section>
+		<div class="find-sec">
+			<form method="get" action="https://premiumlayers.com/wpthemes/realtor">
+	  
+				<ul class="row">
+				  
+				  <!--======= FORM =========-->
+				  <li class="col-sm-3">
+					<label>Choose The City</label>
+					<select name="search_city" class="selectpicker" style="display: none;">
+					  <option value="">Choose</option>
+										  <option value="calinfornia">Calinfornia</option>
+										  <option value="los-angles">Los Angles</option>
+										  <option value="new-jursy">New Jursy</option>
+										  <option value="new-york">New York</option>
+										  <option value="washington-dc">Washington DC</option>
+									</select><div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Choose"><span class="filter-option pull-left">Choose</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Choose&lt;/span&gt;"><span class="text">Choose</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Calinfornia&lt;/span&gt;"><span class="text">Calinfornia</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Los Angles&lt;/span&gt;"><span class="text">Los Angles</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;New Jursy&lt;/span&gt;"><span class="text">New Jursy</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;New York&lt;/span&gt;"><span class="text">New York</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Washington DC&lt;/span&gt;"><span class="text">Washington DC</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+				  </li>
+				  
+				  <!--======= FORM =========-->
+				  <li class="col-sm-3">
+					<label>Location</label>
+					<input class="location" autocomplete="off" type="text" placeholder="Location" name="location" id="location">
+					<div class="location-result"></div>
+				  </li>
+				  <!--======= FORM =========-->
+				  <li class="col-sm-3">
+					  <label>Property Status</label>
+					  <select name="property_status" class="selectpicker" style="display: none;">
+						  <option value="">Choose</option>
+												  <option value="rent">Rent</option>
+												  <option value="sale">Sale</option>
+										  </select><div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Choose"><span class="filter-option pull-left">Choose</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Choose&lt;/span&gt;"><span class="text">Choose</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Rent&lt;/span&gt;"><span class="text">Rent</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Sale&lt;/span&gt;"><span class="text">Sale</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+				  </li>
+				  
+				  <!--======= FORM =========-->
+				  <li class="col-sm-3">
+									  
+					  <label>Property Type</label>
+					  
+					  <select name="property_type" class="selectpicker" style="display: none;">
+						  <option value="">Choose</option>
+												  <option value="factry">Factry</option>
+												  <option value="house">House</option>
+												  <option value="plaza">Plaza</option>
+										  </select><div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Choose"><span class="filter-option pull-left">Choose</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Choose&lt;/span&gt;"><span class="text">Choose</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Factry&lt;/span&gt;"><span class="text">Factry</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;House&lt;/span&gt;"><span class="text">House</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Plaza&lt;/span&gt;"><span class="text">Plaza</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+				  </li>
+				  
+				  <!--======= FORM =========-->
+				  <li class="col-sm-3">
+					<label>No of Bedrooms</label>
+					<select name="property_bedrooms" class="selectpicker" style="display: none;">
+						<option value="">Choose</option>
+					  <option value="1">1</option>
+					  <option value="2">2</option>
+					  <option value="3">3</option>
+					  <option value="4">4</option>
+					  <option value="5">5</option>
+					  <option value="6">6</option>
+					  <option value="7">7</option>
+					  <option value="8">8</option>
+					  <option value="9">9</option>
+					  <option value="10">10</option>
+					</select><div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Choose"><span class="filter-option pull-left">Choose</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Choose&lt;/span&gt;"><span class="text">Choose</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;1&lt;/span&gt;"><span class="text">1</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;2&lt;/span&gt;"><span class="text">2</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;3&lt;/span&gt;"><span class="text">3</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;4&lt;/span&gt;"><span class="text">4</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;5&lt;/span&gt;"><span class="text">5</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;6&lt;/span&gt;"><span class="text">6</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;7&lt;/span&gt;"><span class="text">7</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="8"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;8&lt;/span&gt;"><span class="text">8</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="9"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;9&lt;/span&gt;"><span class="text">9</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="10"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;10&lt;/span&gt;"><span class="text">10</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+				  </li>
+				  
+				  <!--======= FORM =========-->
+				  <li class="col-sm-3">
+					<label>No of Bathrooms</label>
+					<select name="property_bathrooms" class="selectpicker" style="display: none;">
+						<option value="">Choose</option>
+					  <option value="1">1</option>
+					  <option value="2">2</option>
+					  <option value="3">3</option>
+					  <option value="4">4</option>
+					  <option value="5">5</option>
+					  <option value="6">6</option>
+					  <option value="7">7</option>
+					  <option value="8">8</option>
+					  <option value="9">9</option>
+					  <option value="10">10</option>
+					</select><div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Choose"><span class="filter-option pull-left">Choose</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;Choose&lt;/span&gt;"><span class="text">Choose</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;1&lt;/span&gt;"><span class="text">1</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;2&lt;/span&gt;"><span class="text">2</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;3&lt;/span&gt;"><span class="text">3</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;4&lt;/span&gt;"><span class="text">4</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;5&lt;/span&gt;"><span class="text">5</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;6&lt;/span&gt;"><span class="text">6</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;7&lt;/span&gt;"><span class="text">7</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="8"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;8&lt;/span&gt;"><span class="text">8</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="9"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;9&lt;/span&gt;"><span class="text">9</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="10"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;10&lt;/span&gt;"><span class="text">10</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+				  </li>
+					  <!--======= BUTTON =========-->
+					  <div class="col-sm-3 search">
+						  <input type="hidden" name="s">
+						  <input type="hidden" name="post_type" value="sh_property">
+						  <button type="submit" class="btn">Search</button>
+					  </div>
+					</div>
+				  </li>
+				</ul>
+			</form>
+		  </div>
+		</div>
+	  </div>  
+	  
+	  </div></div></div></div><div class="row wpb_row vc_row-fluid"><div class="wpb_column col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">	  
+	</main>
+</body>
+</html>

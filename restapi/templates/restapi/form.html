@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Online-service for real estate valuation</title>
+	<link rel="stylesheet" href="{% static 'css/form4.css' %}">
+</head>
+<body>
+	<header>
+		<h1>Online Service for real estate valuation</h1>
+		<nav>
+			<a href="http://localhost:8000/home/">Home</a>
+			<a href="http://localhost:8000/form/" class = "active">Search</a>
+			<a href="http://www.krisha.kz">Krisha.kz</a>
+		</nav>
+	</header>
+	<main>
+		<aside class = "left">
+			<a href="{% static 'images/amerikanskie-doma20.jpg' %}"><img src="{% static 'images/amerikanskie-doma20.jpg' %}" alt="Creative Common Ultimate Photo" title="By Ed Yourdon [CC BY-SA 2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons"/> </a>
+
+			<a href="{% static 'images/proekt-america-doma-dt0109bk-1.jpg' %}"><img alt="Ultimate Frisbee Colorado Cup 2005" src="{% static 'images/proekt-america-doma-dt0109bk-1.jpg' %}"/></a>
+
+
+			<a href="{% static 'images/xtula_1.jpg.pagespeed.ic.mqJj-QlS9k.jpg' %}" title="Ultimate Frisbee"><img src="{% static 'images/xtula_1.jpg.pagespeed.ic.mqJj-QlS9k.jpg' %}"  alt="Ultimate Frisbee"></a>
+		</aside>
+		<section class = "right">
+			<p>This is just a concept, it hasn't been finished yet.</p>
+			<br></br>
+		</section>
+	</main>
+</body>
+</html>
+
+<form method="POST">
+	{% csrf_token %}
+	{{ form.as_p}}
+	<button type="submit" value="Evaluate">Evaluate</button>
+</form>
+
+<h2>Price: {{data}}</h2>
