@@ -1,14 +1,7 @@
 from audioop import add
 from distutils.command.build import build
-from tkinter import Widget
 from django.db import models
 import json
-
-with open("complex.json", "r", encoding='utf-8') as f:
-    complex_dict = json.load(f)
-adr=[]
-for complex in complex_dict.keys():
-    adr.append((complex_dict[complex], complex))
 
 # Create your models here.
 class ValuationAPI(models.Model):  

@@ -7,12 +7,6 @@ from .models import ValuationAPI
 import json
 
 
-with open("complex.json", "r", encoding='utf-8') as f:
-    complex_dict = json.load(f)
-adr=[]
-for complex in complex_dict.keys():
-    adr.append((complex_dict[complex], complex))
-
 cit = (('city_Астана', 'Астана (Нур-Султан)'))
 
 reg = (('region_Есильский р-н', "Есильский"), ('region_Алматы р-н', 'Aлматы'),
